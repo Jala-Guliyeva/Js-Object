@@ -5,12 +5,11 @@
 var s = [25, 30, 40, 50];
 
 Array.prototype.myMap = function(callback) {
-  var newArray = [];
-  let i = 0;
-   while(i < this.length){
-        newArray.push(callback(this[i]));
-    i++
-   }
+  arr= [];
+ for (let index = 0; index < this.length; index++) {
+   const element = array[index];
+   
+ }
   return newArray;
 };
 
@@ -18,7 +17,7 @@ var new_s = s.myMap(function(item) {
   return item * 2;
 });
 
-// console.log(new_s);
+//console.log(new_s);
 
 
 
@@ -93,7 +92,6 @@ Array.prototype.customFilter = function(fn) {
     }
     return f;
   };
-  console.log(customFilter(f))
 
 
   // for (let index = 0; index < array.length; index++) {
